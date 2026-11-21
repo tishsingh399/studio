@@ -27,15 +27,13 @@ TODO
 """
 POST = """# Post drafts: {title}
 
-Starting points pulled from the README. Rewrite in your own words, or ask Claude to redraft them with the tina-writing skill. Nothing here is posted automatically.
+Drafted from the README. Fill the brackets in your own words before posting. Rules in CAPTIONS.md. Nothing posts automatically.
 
 ## @tish_letters (hand-drawn)
 
 {what}
 
-{learned}
-
-Notes and code are in my studio repo, link in bio.
+[One line only you could write: what was hard, what surprised you, what you'd change.]
 
 ## @ux_perince (UX)
 
@@ -43,7 +41,7 @@ Notes and code are in my studio repo, link in bio.
 
 The one thing I learned: {learned_lc}
 
-How it works, and how to run it yourself, is in my studio repo. Link in bio.
+[One line on what it changed in how you design.]
 """
 
 

@@ -35,13 +35,9 @@ python3 new-build.py my-new-thing
 
 That creates `builds/my-new-thing/README.md`. Fill in the three sections, drop in a capture, then run the same command again to draft `post.md` from the README. It won't overwrite a `post.md` you've edited unless you add `--force`.
 
-Print photos go in exactly as taken as `capture.jpg`. Cleaned-up versions for posting (straightened, cropped, colours untouched) sit next to them as `fixed.*`. [prints.html](prints.html) shows them together as a gallery.
+Photos go in exactly as I took them. No AI editing, crops or filters. [prints.html](prints.html) shows them together as a gallery.
 
-Mockups put a print into a scene for a nicer shot. The scenes in `mockups/scenes/` are AI-generated (front-facing, with a blank frame or sheet). The print itself is only scaled to fit, never redrawn:
-
-```bash
-python3 mockup.py mockups/scenes/frame-wall.png builds/my-print/fixed.jpg builds/my-print/mockup-frame.jpg
-```
+Caption rules, so drafts sound like me and not like a bot: [CAPTIONS.md](CAPTIONS.md).
 
 Nothing posts automatically. [POSTING.md](POSTING.md) covers what auto-posting to Instagram would need and when it's worth it.
 
