@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Major Arcana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* clementine:start */
+/* Generated from Clementine tokens (clementine-ds) by Idea Lab/scripts/clementine-css.py. Do not edit by hand. */
+:root {
+  --cl-spacing-xs: 4px;
+  --cl-spacing-sm: 8px;
+  --cl-spacing-md: 16px;
+  --cl-spacing-lg: 24px;
+  --cl-spacing-xl: 32px;
+  --cl-radius-xs: 2px;
+  --cl-radius-sm: 4px;
+  --cl-radius-md: 6px;
+  --cl-radius-lg: 8px;
+  --cl-radius-xl: 99px;
+  --cl-shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+  --cl-shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --cl-shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+  --cl-shadow-lg: 0 8px 24px rgba(0,0,0,0.16);
+  --cl-shadow-xl: 0 16px 48px rgba(0,0,0,0.2);
+  --cl-typography-font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --cl-typography-font-family-mono: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', monospace;
+  --cl-typography-font-size-xs: 12px;
+  --cl-typography-font-size-sm: 14px;
+  --cl-typography-font-size-md: 16px;
+  --cl-typography-font-size-lg: 18px;
+  --cl-typography-font-size-xl: 20px;
+  --cl-typography-line-height-xs: 1.4;
+  --cl-typography-line-height-sm: 1.45;
+  --cl-typography-line-height-md: 1.55;
+  --cl-typography-line-height-lg: 1.6;
+  --cl-typography-line-height-xl: 1.65;
+  --cl-motion-duration-instant: 0ms;
+  --cl-motion-duration-fast: 100ms;
+  --cl-motion-duration-normal: 200ms;
+  --cl-motion-duration-slow: 300ms;
+  --cl-motion-duration-stream: 1200ms;
+  --cl-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --cl-motion-easing-decelerate: cubic-bezier(0, 0, 0, 1);
+  --cl-motion-easing-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --cl-color-brand-clementine: #ff8040;
+  --cl-color-brand-clementine-strong: #f5631a;
+  --cl-action-primary: #2563eb;
+  --cl-action-primary-hover: #1d4ed8;
+  --cl-action-primary-active: #1e40af;
+  --cl-action-selected-subtle: #eff4ff;
+  --cl-action-selected-subtle-hover: #dbeafe;
+  --cl-action-destructive: #dc2626;
+  --cl-action-destructive-hover: #b91c1c;
+  --cl-accent-brand: #f97316;
+  --cl-surface-default: #fafaf8;
+  --cl-surface-elevated: #ffffff;
+  --cl-surface-subtle: #f3f3f0;
+  --cl-surface-subtle-hover: #e5e5e0;
+  --cl-surface-inverse: #1a1a18;
+  --cl-surface-overlay: rgba(0,0,0,0.4);
+  --cl-text-primary: #1a1a18;
+  --cl-text-secondary: #6b6b66;
+  --cl-text-tertiary: #737370;
+  --cl-text-on-action: #ffffff;
+  --cl-text-link: #2563eb;
+  --cl-text-on-inverse: #a3a39e;
+  --cl-text-on-inverse-muted: #e5e5e0;
+  --cl-text-on-inverse-strong: #ffffff;
+  --cl-border-default: #e5e5e0;
+  --cl-border-strong: #737370;
+  --cl-border-focus: #2563eb;
+  --cl-border-inverse: #3a3a37;
+  --cl-focus-ring: #f5631a;
+  --cl-feedback-error: #dc2626;
+  --cl-feedback-error-subtle: #fef2f2;
+  --cl-feedback-success: #16a34a;
+  --cl-feedback-success-subtle: #f0fdf4;
+  --cl-feedback-warning: #ea580c;
+  --cl-feedback-warning-subtle: #fff7ed;
+  --cl-risk-critical: #7f1d1d;
+  --cl-risk-critical-subtle: #fef2f2;
+  --cl-risk-high: #c2410c;
+  --cl-risk-high-subtle: #fff7ed;
+  --cl-risk-medium: #ea580c;
+  --cl-risk-medium-subtle: #ffedd5;
+  --cl-risk-low: #16a34a;
+  --cl-risk-low-subtle: #f0fdf4;
+  /* Fixed theme values: --cl-dark-* and --cl-light-* never switch, for pages that commit to one look on purpose. */
+  --cl-dark-action-primary: #60a5fa;
+  --cl-dark-action-primary-hover: #93c5fd;
+  --cl-dark-action-primary-active: #3b82f6;
+  --cl-dark-action-selected-subtle: #1e3a8a;
+  --cl-dark-action-selected-subtle-hover: #1e40af;
+  --cl-dark-action-destructive: #f87171;
+  --cl-dark-action-destructive-hover: #fca5a5;
+  --cl-dark-accent-brand: #ff8040;
+  --cl-dark-surface-default: #1a2735;
+  --cl-dark-surface-elevated: #243447;
+  --cl-dark-surface-subtle: #15202e;
+  --cl-dark-surface-subtle-hover: #243447;
+  --cl-dark-surface-inverse: #1a1a18;
+  --cl-dark-surface-overlay: rgba(0,0,0,0.6);
+  --cl-dark-text-primary: #f0f4f8;
+  --cl-dark-text-secondary: #a0aec0;
+  --cl-dark-text-tertiary: #94a1b2;
+  --cl-dark-text-on-action: #1a1a18;
+  --cl-dark-text-link: #60a5fa;
+  --cl-dark-text-on-inverse: #a3a39e;
+  --cl-dark-text-on-inverse-muted: #e5e5e0;
+  --cl-dark-text-on-inverse-strong: #ffffff;
+  --cl-dark-border-default: #4a5568;
+  --cl-dark-border-strong: #718096;
+  --cl-dark-border-focus: #60a5fa;
+  --cl-dark-border-inverse: #3a3a37;
+  --cl-dark-focus-ring: #ff8040;
+  --cl-dark-feedback-error: #f87171;
+  --cl-dark-feedback-error-subtle: #3b1515;
+  --cl-dark-feedback-success: #4ade80;
+  --cl-dark-feedback-success-subtle: #15302b;
+  --cl-dark-feedback-warning: #fb923c;
+  --cl-dark-feedback-warning-subtle: #302015;
+  --cl-dark-risk-critical: #f87171;
+  --cl-dark-risk-critical-subtle: #3b1515;
+  --cl-dark-risk-high: #fb923c;
+  --cl-dark-risk-high-subtle: #302015;
+  --cl-dark-risk-medium: #fdba74;
+  --cl-dark-risk-medium-subtle: #2a1d10;
+  --cl-dark-risk-low: #4ade80;
+  --cl-dark-risk-low-subtle: #15302b;
+  --cl-light-action-primary: #2563eb;
+  --cl-light-action-primary-hover: #1d4ed8;
+  --cl-light-action-primary-active: #1e40af;
+  --cl-light-action-selected-subtle: #eff4ff;
+  --cl-light-action-selected-subtle-hover: #dbeafe;
+  --cl-light-action-destructive: #dc2626;
+  --cl-light-action-destructive-hover: #b91c1c;
+  --cl-light-accent-brand: #f97316;
+  --cl-light-surface-default: #fafaf8;
+  --cl-light-surface-elevated: #ffffff;
+  --cl-light-surface-subtle: #f3f3f0;
+  --cl-light-surface-subtle-hover: #e5e5e0;
+  --cl-light-surface-inverse: #1a1a18;
+  --cl-light-surface-overlay: rgba(0,0,0,0.4);
+  --cl-light-text-primary: #1a1a18;
+  --cl-light-text-secondary: #6b6b66;
+  --cl-light-text-tertiary: #737370;
+  --cl-light-text-on-action: #ffffff;
+  --cl-light-text-link: #2563eb;
+  --cl-light-text-on-inverse: #a3a39e;
+  --cl-light-text-on-inverse-muted: #e5e5e0;
+  --cl-light-text-on-inverse-strong: #ffffff;
+  --cl-light-border-default: #e5e5e0;
+  --cl-light-border-strong: #737370;
+  --cl-light-border-focus: #2563eb;
+  --cl-light-border-inverse: #3a3a37;
+  --cl-light-focus-ring: #f5631a;
+  --cl-light-feedback-error: #dc2626;
+  --cl-light-feedback-error-subtle: #fef2f2;
+  --cl-light-feedback-success: #16a34a;
+  --cl-light-feedback-success-subtle: #f0fdf4;
+  --cl-light-feedback-warning: #ea580c;
+  --cl-light-feedback-warning-subtle: #fff7ed;
+  --cl-light-risk-critical: #7f1d1d;
+  --cl-light-risk-critical-subtle: #fef2f2;
+  --cl-light-risk-high: #c2410c;
+  --cl-light-risk-high-subtle: #fff7ed;
+  --cl-light-risk-medium: #ea580c;
+  --cl-light-risk-medium-subtle: #ffedd5;
+  --cl-light-risk-low: #16a34a;
+  --cl-light-risk-low-subtle: #f0fdf4;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --cl-action-primary: #60a5fa;
+  --cl-action-primary-hover: #93c5fd;
+  --cl-action-primary-active: #3b82f6;
+  --cl-action-selected-subtle: #1e3a8a;
+  --cl-action-selected-subtle-hover: #1e40af;
+  --cl-action-destructive: #f87171;
+  --cl-action-destructive-hover: #fca5a5;
+  --cl-accent-brand: #ff8040;
+  --cl-surface-default: #1a2735;
+  --cl-surface-elevated: #243447;
+  --cl-surface-subtle: #15202e;
+  --cl-surface-subtle-hover: #243447;
+  --cl-surface-inverse: #1a1a18;
+  --cl-surface-overlay: rgba(0,0,0,0.6);
+  --cl-text-primary: #f0f4f8;
+  --cl-text-secondary: #a0aec0;
+  --cl-text-tertiary: #94a1b2;
+  --cl-text-on-action: #1a1a18;
+  --cl-text-link: #60a5fa;
+  --cl-text-on-inverse: #a3a39e;
+  --cl-text-on-inverse-muted: #e5e5e0;
+  --cl-text-on-inverse-strong: #ffffff;
+  --cl-border-default: #4a5568;
+  --cl-border-strong: #718096;
+  --cl-border-focus: #60a5fa;
+  --cl-border-inverse: #3a3a37;
+  --cl-focus-ring: #ff8040;
+  --cl-feedback-error: #f87171;
+  --cl-feedback-error-subtle: #3b1515;
+  --cl-feedback-success: #4ade80;
+  --cl-feedback-success-subtle: #15302b;
+  --cl-feedback-warning: #fb923c;
+  --cl-feedback-warning-subtle: #302015;
+  --cl-risk-critical: #f87171;
+  --cl-risk-critical-subtle: #3b1515;
+  --cl-risk-high: #fb923c;
+  --cl-risk-high-subtle: #302015;
+  --cl-risk-medium: #fdba74;
+  --cl-risk-medium-subtle: #2a1d10;
+  --cl-risk-low: #4ade80;
+  --cl-risk-low-subtle: #15302b;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --cl-action-primary: #60a5fa;
+  --cl-action-primary-hover: #93c5fd;
+  --cl-action-primary-active: #3b82f6;
+  --cl-action-selected-subtle: #1e3a8a;
+  --cl-action-selected-subtle-hover: #1e40af;
+  --cl-action-destructive: #f87171;
+  --cl-action-destructive-hover: #fca5a5;
+  --cl-accent-brand: #ff8040;
+  --cl-surface-default: #1a2735;
+  --cl-surface-elevated: #243447;
+  --cl-surface-subtle: #15202e;
+  --cl-surface-subtle-hover: #243447;
+  --cl-surface-inverse: #1a1a18;
+  --cl-surface-overlay: rgba(0,0,0,0.6);
+  --cl-text-primary: #f0f4f8;
+  --cl-text-secondary: #a0aec0;
+  --cl-text-tertiary: #94a1b2;
+  --cl-text-on-action: #1a1a18;
+  --cl-text-link: #60a5fa;
+  --cl-text-on-inverse: #a3a39e;
+  --cl-text-on-inverse-muted: #e5e5e0;
+  --cl-text-on-inverse-strong: #ffffff;
+  --cl-border-default: #4a5568;
+  --cl-border-strong: #718096;
+  --cl-border-focus: #60a5fa;
+  --cl-border-inverse: #3a3a37;
+  --cl-focus-ring: #ff8040;
+  --cl-feedback-error: #f87171;
+  --cl-feedback-error-subtle: #3b1515;
+  --cl-feedback-success: #4ade80;
+  --cl-feedback-success-subtle: #15302b;
+  --cl-feedback-warning: #fb923c;
+  --cl-feedback-warning-subtle: #302015;
+  --cl-risk-critical: #f87171;
+  --cl-risk-critical-subtle: #3b1515;
+  --cl-risk-high: #fb923c;
+  --cl-risk-high-subtle: #302015;
+  --cl-risk-medium: #fdba74;
+  --cl-risk-medium-subtle: #2a1d10;
+  --cl-risk-low: #4ade80;
+  --cl-risk-low-subtle: #15302b;
+  color-scheme: dark;
+}
+/* clementine:end */
+/* Layout: a black table (Clementine ink) with the deck on the left and three card slots; the reading below; all 22 cards as a browsable row at the end.
+   One look in every theme: ink and paper come from the fixed --cl-light-* tokens. Clementine styles the page only; the cards are the 1909 Rider-Waite-Smith art. */
+:root{
+  --table:var(--cl-light-surface-inverse); --paper:var(--cl-light-surface-default); --ink:var(--cl-light-text-primary);
+  --on-table:var(--cl-light-text-on-inverse-strong); --on-table-2:var(--cl-light-text-on-inverse); --line:var(--cl-light-border-inverse);
+  --accent:var(--cl-color-brand-clementine); color-scheme:dark;
+  --bw:grayscale(1) contrast(1.18) brightness(1.04);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--table);color:var(--on-table);font-family:var(--cl-typography-font-family-sans);font-size:var(--cl-typography-font-size-sm);line-height:var(--cl-typography-line-height-md)}
+.wrap{max-width:1120px;margin:0 auto;padding-block:var(--cl-spacing-xl);padding-left:max(var(--cl-spacing-md),env(safe-area-inset-left,0px));padding-right:max(var(--cl-spacing-md),env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:var(--cl-spacing-xl)}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:var(--cl-spacing-md)}
+/* Gap: no display size in Clementine yet (see clementine-gaps.md). */
+h1{font-weight:700;font-size:calc(var(--cl-typography-font-size-xl) * 2);line-height:1.1;margin:0;letter-spacing:-.02em}
+.sub{margin:var(--cl-spacing-xs) 0 0;color:var(--on-table-2);font-size:var(--cl-typography-font-size-md);max-width:56ch}
+h2{font-size:var(--cl-typography-font-size-xs);font-family:var(--cl-typography-font-family-mono);text-transform:uppercase;letter-spacing:.1em;color:var(--on-table-2);font-weight:500;margin:0}
+.actions{display:flex;flex-wrap:wrap;gap:var(--cl-spacing-sm);align-items:center}
+button{font:inherit;cursor:pointer;border-radius:var(--cl-radius-md);padding:8px 14px;border:1px solid var(--line);background:transparent;color:var(--on-table)}
+button:hover{border-color:var(--on-table-2)}
+button.primary{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600}
+label.toggle{display:inline-flex;gap:var(--cl-spacing-xs);align-items:center;color:var(--on-table-2);font-size:var(--cl-typography-font-size-xs)}
+:focus-visible{outline:2px solid var(--cl-focus-ring);outline-offset:3px}
+
+.table{display:grid;grid-template-columns:auto 1fr;gap:var(--cl-spacing-xl);align-items:start}
+.deck{position:relative;width:150px;aspect-ratio:300/520}
+.deck .card{position:absolute;inset:0}
+.deck .card:nth-child(1){transform:translate(6px,6px) rotate(2deg)}
+.deck .card:nth-child(2){transform:translate(3px,3px) rotate(1deg)}
+.slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--cl-spacing-lg)}
+.slot{display:flex;flex-direction:column;gap:var(--cl-spacing-sm);align-items:center;min-width:0}
+.place{width:100%;max-width:220px;aspect-ratio:300/520;border:1px dashed var(--line);border-radius:var(--cl-radius-lg);position:relative}
+.slot .label{font-size:var(--cl-typography-font-size-xs);color:var(--on-table-2)}
+
+.card{width:100%;height:100%;perspective:1200px;cursor:pointer;border:0;padding:0;background:none;border-radius:var(--cl-radius-lg);display:block}
+.card .inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.9,.25,1.15)}
+.card.up .inner{transform:rotateY(180deg)}
+.card.up.rev .inner{transform:rotateY(180deg) rotateZ(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--cl-radius-lg);overflow:hidden;box-shadow:var(--cl-shadow-lg);background:var(--paper)}
+.back img{width:100%;height:100%;display:block}
+.front{transform:rotateY(180deg)}
+.front img{width:100%;height:100%;object-fit:cover;display:block;transition:filter .4s}
+body[data-style="bw"] .front img{filter:var(--bw)}
+select{font:inherit;background:transparent;color:var(--on-table);border:1px solid var(--line);border-radius:var(--cl-radius-md);padding:4px 8px}
+select option{color:var(--ink)}
+.front .ph{display:grid;place-items:center;align-content:center;gap:var(--cl-spacing-sm);height:100%;padding:12%;text-align:center;color:var(--ink);border:1px solid var(--ink);border-radius:var(--cl-radius-lg)}
+.front .ph b{font-size:var(--cl-typography-font-size-md);letter-spacing:.14em;text-transform:uppercase}
+.front .ph span{font-family:var(--cl-typography-font-family-mono);font-size:var(--cl-typography-font-size-xs)}
+.card.selected .face{outline:2px solid var(--accent);outline-offset:3px}
+@keyframes deal{from{transform:translate(-40px,-24px) rotate(-8deg) scale(.92);opacity:0}to{transform:none;opacity:1}}
+.dealt{animation:deal .55s cubic-bezier(.2,.9,.25,1.1) both}
+
+.reading{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--cl-spacing-xl);border-top:1px solid var(--line);padding-top:var(--cl-spacing-lg)}
+.reading h3{margin:var(--cl-spacing-xs) 0 var(--cl-spacing-sm);font-size:var(--cl-typography-font-size-xl);line-height:1.3}
+.reading p{margin:0 0 var(--cl-spacing-sm);color:var(--on-table-2);max-width:60ch;font-size:var(--cl-typography-font-size-md)}
+.kw{display:flex;flex-wrap:wrap;gap:var(--cl-spacing-xs);margin:var(--cl-spacing-xs) 0 var(--cl-spacing-sm)}
+.kw span{font-size:var(--cl-typography-font-size-xs);border:1px solid var(--line);border-radius:var(--cl-radius-xl);padding:2px 10px;color:var(--on-table)}
+.tag{font-family:var(--cl-typography-font-family-mono);font-size:var(--cl-typography-font-size-xs);color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+.spread{display:flex;flex-direction:column;gap:var(--cl-spacing-md)}
+.spread .item{border-left:2px solid var(--line);padding-left:var(--cl-spacing-md)}
+.spread .item.on{border-color:var(--accent)}
+.spread .item b{display:block}
+.empty{color:var(--on-table-2)}
+
+.all{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));gap:var(--cl-spacing-sm)}
+.all .card{aspect-ratio:300/520;height:auto}
+.credit{font-size:var(--cl-typography-font-size-xs);color:var(--on-table-2);margin:0}
+.credit a{color:var(--on-table)}
+@media (max-width:900px){.all{grid-template-columns:repeat(6,minmax(0,1fr))}.reading{grid-template-columns:1fr}}
+@media (max-width:700px){.table{grid-template-columns:1fr}.deck{width:100px}.all{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:480px){.slots{gap:var(--cl-spacing-sm)}}
+@media (prefers-reduced-motion:reduce){.card .inner,.front img{transition:none}.dealt{animation:none}}
+</style>
+</head>
+<body data-style="bw">
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Major Arcana</h1>
+      <p class="sub">The 22 trump cards of the 1909 Rider-Waite-Smith deck, in black and white. Draw today's card or lay out a past, present and future reading.</p>
+    </div>
+    <div class="actions">
+      <button class="primary" id="today" type="button">Draw today's card</button>
+      <button id="three" type="button">Three-card reading</button>
+      <button id="save" type="button" disabled>Save card</button>
+      <label class="toggle" for="style">Style <select id="style"><option value="bw">Black &amp; white</option><option value="colour">Colour</option><option value="ascii">ASCII</option><option value="stars">Star dither</option><option value="halftone">Halftone</option><option value="engrave">Engraving</option></select></label>
+      <span class="toggle" id="busy" hidden>Redrawing…</span>
+    </div>
+  </header>
+
+  <section class="table" aria-label="The table">
+    <div class="deck" id="deck" aria-hidden="true"></div>
+    <div class="slots">
+      <div class="slot"><div class="place" id="slot0"></div><div class="label">Past</div></div>
+      <div class="slot"><div class="place" id="slot1"></div><div class="label">Present</div></div>
+      <div class="slot"><div class="place" id="slot2"></div><div class="label">Future</div></div>
+    </div>
+  </section>
+
+  <section class="reading" aria-live="polite">
+    <div id="meaning"><p class="empty">Draw a card. Its meaning appears here, upright or reversed.</p></div>
+    <div class="spread" id="spread"></div>
+  </section>
+
+  <section>
+    <h2>The 22 cards</h2>
+    <div class="all" id="all" style="margin-top:var(--cl-spacing-md)"></div>
+  </section>
+
+  <p class="credit">Card art by Pamela Colman Smith for the Rider-Waite-Smith tarot, 1909. Public domain, scans from <a href="https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>. Readings are for reflection, not prediction.</p>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+
+// Traditional meanings, written plainly. up / rev = keywords; read = one line of reflection.
+const CARDS = [
+  ["0","The Fool",["beginnings","a leap of faith","play"],["recklessness","holding back"],"Something new wants you to start before you feel ready."],
+  ["I","The Magician",["skill","focus","making it happen"],["scattered energy","tricks"],"You already have the tools. Put them on the table and use them."],
+  ["II","The High Priestess",["intuition","quiet knowing","patience"],["ignoring your gut","secrets"],"Listen before you act. The answer is quieter than the noise."],
+  ["III","The Empress",["abundance","care","creativity"],["smothering","creative block"],"Make room for things to grow, including you."],
+  ["IV","The Emperor",["structure","leadership","stability"],["rigidity","control"],"Set a clear frame. Good structure is a kindness."],
+  ["V","The Hierophant",["tradition","learning","guidance"],["dogma","breaking the rules"],"Learn the rules well, then decide which ones serve you."],
+  ["VI","The Lovers",["connection","choice","values"],["imbalance","misaligned choices"],"A choice is really a question about what you value."],
+  ["VII","The Chariot",["drive","willpower","momentum"],["losing direction","forcing it"],"Hold both reins. Progress comes from steering, not speed."],
+  ["VIII","Strength",["courage","gentleness","patience"],["self-doubt","harshness"],"Soft strength wins here. Be patient with the wild part."],
+  ["IX","The Hermit",["solitude","reflection","inner light"],["isolation","avoiding people"],"Step back to see clearly, then bring the light back with you."],
+  ["X","Wheel of Fortune",["cycles","change","timing"],["resisting change","bad timing"],"Things are turning. Work with the turn rather than against it."],
+  ["XI","Justice",["fairness","truth","cause and effect"],["unfairness","avoiding accountability"],"Be honest about what is yours to own."],
+  ["XII","The Hanged Man",["pause","surrender","new perspective"],["stalling","martyrdom"],"Stop pushing. Hang upside down for a moment and look again."],
+  ["XIII","Death",["endings","transformation","clearing"],["clinging","fear of change"],"Let something finish so something else can begin."],
+  ["XIV","Temperance",["balance","moderation","blending"],["excess","impatience"],"Mix slowly. The right amount matters more than the most."],
+  ["XV","The Devil",["attachment","temptation","habits"],["breaking free","awareness"],"Notice what has a hold on you. The chains are looser than they look."],
+  ["XVI","The Tower",["sudden change","revelation","shake-up"],["avoiding disaster","fear of upheaval"],"What falls was not built to last. Build again, better."],
+  ["XVII","The Star",["hope","renewal","calm"],["discouragement","lost faith"],"After the storm, rest and refill. Hope is practical."],
+  ["XVIII","The Moon",["uncertainty","dreams","illusion"],["clarity returning","confusion lifting"],"Not everything is as it seems at night. Move gently."],
+  ["XIX","The Sun",["joy","success","warmth"],["dimmed joy","overconfidence"],"Let yourself enjoy what is going well."],
+  ["XX","Judgement",["awakening","reckoning","a calling"],["self-judgement","ignoring the call"],"Something is calling you to rise. Answer it honestly."],
+  ["XXI","The World",["completion","wholeness","arrival"],["loose ends","delay"],"A cycle is closing. Celebrate it before the next begins."],
+].map(([num, name, up, rev, read], i) => ({ i, num, name, up, rev, read, src: `cards/${String(i).padStart(2, "0")}.jpg` }));
+
+// Card back: a field of tarot sparkles in paper on ink.
+function sparkle(c, x, y, r) { const k = r * 0.18; c.beginPath(); c.moveTo(x, y - r); c.quadraticCurveTo(x + k, y - k, x + r, y); c.quadraticCurveTo(x + k, y + k, x, y + r); c.quadraticCurveTo(x - k, y + k, x - r, y); c.quadraticCurveTo(x - k, y - k, x, y - r); c.fill(); }
+const BACK = (() => { const W = 300, H = 520, c = document.createElement("canvas"); c.width = W; c.height = H; const x = c.getContext("2d");
+  x.fillStyle = css("--cl-light-text-primary"); x.fillRect(0, 0, W, H); x.fillStyle = css("--cl-light-surface-default");
+  for (let j = 0; j < 17; j++) for (let i = 0; i < 10; i++) { const px = 15 + i * 30 + (j % 2) * 15, py = 20 + j * 30, d = Math.hypot(px - W / 2, py - H / 2); sparkle(x, px, py, 2 + 7 * Math.max(0, 1 - d / 240)); }
+  x.strokeStyle = css("--cl-light-surface-default"); x.lineWidth = 1.5; x.strokeRect(10, 10, W - 20, H - 20); return c.toDataURL(); })();
+
+function cardEl(card, faceUp, reversed = false) {
+  const b = document.createElement("button"); b.type = "button";
+  b.className = "card" + (faceUp ? " up" : "") + (reversed ? " rev" : "");
+  b.innerHTML = `<div class="inner"><div class="face back"><img alt="" src="${BACK}"></div><div class="face front"><img alt="" loading="lazy"></div></div>`;
+  const img = b.querySelector(".front img");
+  // If a card image is missing, show a typographic face instead of a broken image.
+  img.onerror = () => { const ph = document.createElement("div"); ph.className = "ph"; const n = document.createElement("span"); n.textContent = card.num; const t = document.createElement("b"); t.textContent = card.name; ph.append(n, t); img.replaceWith(ph); };
+  img.dataset.i = card.i; img.src = card.src;
+  const st = document.body.dataset.style; if (st !== "bw" && st !== "colour") styled(card, st).then(src => { if (document.body.dataset.style === st) img.src = src; }); img.alt = card.name + (reversed ? " (reversed)" : "");
+  b.setAttribute("aria-label", faceUp ? card.name : "Face-down card");
+  b.addEventListener("click", () => { if (!b.classList.contains("up")) { b.classList.add("up"); b.setAttribute("aria-label", card.name + (reversed ? ", reversed" : "")); } select(card, reversed, b); });
+  return b;
+}
+for (let k = 0; k < 3; k++) { const d = cardEl(CARDS[0], false); d.tabIndex = -1; d.style.pointerEvents = "none"; $("deck").append(d); }
+CARDS.forEach(c => $("all").append(cardEl(c, true)));
+
+// ---------- Styles: redraw the real card art with techniques from the saved reels ----------
+const INK = css("--cl-light-text-primary"), PAPER = css("--cl-light-surface-default");
+const cache = new Map();
+function styled(card, style) {
+  if (style === "bw" || style === "colour") return Promise.resolve(card.src);
+  const key = card.i + ":" + style;
+  if (!cache.has(key)) cache.set(key, renderStyle(card, style));
+  return cache.get(key);
+}
+async function renderStyle(card, style) {
+  const im = new Image(); im.src = card.src; await im.decode();
+  const W = im.naturalWidth, H = im.naturalHeight;
+  const cw = style === "ascii" ? 6 : style === "engrave" ? 4 : 6, ch = style === "ascii" ? 10 : cw + (style === "engrave" ? 1 : 0);
+  const cols = Math.floor(W / cw), rows = Math.floor(H / ch);
+  const t = document.createElement("canvas"); t.width = cols; t.height = rows;
+  const tc = t.getContext("2d", { willReadFrequently: true }); tc.drawImage(im, 0, 0, cols, rows);
+  const px = tc.getImageData(0, 0, cols, rows).data;
+  const out = document.createElement("canvas"), k = 2; out.width = W * k; out.height = H * k;
+  const c = out.getContext("2d"); c.scale(k, k);
+  // ASCII reads best as a terminal: light characters on ink. The other styles are ink on paper.
+  const term = style === "ascii";
+  c.fillStyle = term ? INK : PAPER; c.fillRect(0, 0, W, H); c.fillStyle = term ? PAPER : INK;
+  const RAMP = " .,:;-=+*#%@";
+  if (style === "ascii") { c.font = `500 ${ch * 0.95}px ${css("--cl-typography-font-family-mono")}`; c.textBaseline = "top"; }
+  for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++) {
+    const i = (y * cols + x) * 4, L = (.2126 * px[i] + .7152 * px[i + 1] + .0722 * px[i + 2]) / 255;
+    const d = Math.min(1, Math.max(0, (1 - L - 0.06) * 1.3)); // darkness, a little contrast
+    const X = x * cw, Y = y * ch;
+    if (term) { const b = Math.min(1, Math.max(0, (L - 0.12) * 1.35)) ** 1.2; if (b > 0.04) c.fillText(RAMP[Math.round(b * (RAMP.length - 1))], X, Y); continue; }
+    if (d < 0.04) continue;
+    else if (style === "stars") { const r = cw * 0.78 * Math.sqrt(d); d > 0.45 ? sparkle(c, X + cw / 2, Y + ch / 2, r) : (c.beginPath(), c.arc(X + cw / 2, Y + ch / 2, r * 0.45, 0, Math.PI * 2), c.fill()); }
+    else if (style === "halftone") { c.beginPath(); c.arc(X + cw / 2, Y + ch / 2, cw * 0.7 * Math.sqrt(d), 0, Math.PI * 2); c.fill(); }
+    else if (style === "engrave") { const h = ch * 0.92 * d; c.fillRect(X, Y + (ch - h) / 2, cw + 0.4, h); }
+  }
+  return out.toDataURL("image/jpeg", 0.88);
+}
+async function applyStyle(style) {
+  document.body.dataset.style = style; $("busy").hidden = style === "bw" || style === "colour";
+  const imgs = [...document.querySelectorAll(".front img[data-i]")];
+  for (const img of imgs) { const src = await styled(CARDS[+img.dataset.i], style); if (document.body.dataset.style === style) img.src = src; }
+  $("busy").hidden = true;
+}
+$("style").onchange = e => applyStyle(e.target.value);
+// A plain #name in the link opens that style directly (e.g. …#ascii), so a look can be shared.
+const startStyle = location.hash.slice(1); if ([...$("style").options].some(o => o.value === startStyle)) { $("style").value = startStyle; applyStyle(startStyle); }
+$("style").addEventListener("change", e => { try { history.replaceState(null, "", "#" + e.target.value); } catch {} });
+
+// ---------- Reading ----------
+let current = null, spread = [];
+function select(card, reversed, el) {
+  document.querySelectorAll(".card.selected").forEach(n => n.classList.remove("selected")); el.classList.add("selected");
+  current = { card, reversed }; $("save").disabled = false;
+  const m = $("meaning"); m.replaceChildren();
+  const tag = document.createElement("div"); tag.className = "tag"; tag.textContent = `${card.num} · ${reversed ? "reversed" : "upright"}`;
+  const h = document.createElement("h3"); h.textContent = card.name;
+  const kw = document.createElement("div"); kw.className = "kw"; (reversed ? card.rev : card.up).forEach(w => { const s = document.createElement("span"); s.textContent = w; kw.append(s); });
+  const p = document.createElement("p"); p.textContent = reversed ? `Reversed, this card can point to ${card.rev.join(" or ")}. ${card.read}` : card.read;
+  m.append(tag, h, kw, p);
+  document.querySelectorAll(".spread .item").forEach(n => n.classList.toggle("on", n.dataset.i == card.i));
+}
+function renderSpread() {
+  const s = $("spread"); s.replaceChildren();
+  ["Past", "Present", "Future"].forEach((label, k) => { const it = spread[k]; if (!it) return;
+    const d = document.createElement("div"); d.className = "item"; d.dataset.i = it.card.i;
+    const b = document.createElement("b"); b.textContent = `${label}: ${it.card.name}${it.reversed ? " (reversed)" : ""}`;
+    const t = document.createElement("span"); t.textContent = (it.reversed ? it.card.rev : it.card.up).join(", "); t.style.color = "var(--on-table-2)";
+    d.append(b, t); s.append(d); });
+}
+function clearSlots() { for (let k = 0; k < 3; k++) $("slot" + k).replaceChildren(); spread = []; renderSpread(); }
+function deal(slot, card, reversed, delay) {
+  const el = cardEl(card, false, reversed); el.classList.add("dealt"); el.style.animationDelay = `${delay}ms`;
+  $("slot" + slot).replaceChildren(el); setTimeout(() => el.click(), reduced.matches ? 0 : delay + 600);
+}
+function dayIndex() { const d = new Date(), s = d.getFullYear() * 400 + (d.getMonth() + 1) * 31 + d.getDate(); return (s * 9301 + 49297) % 233280 % CARDS.length; }
+$("today").onclick = () => { clearSlots(); deal(1, CARDS[dayIndex()], false, 0); };
+$("three").onclick = () => {
+  clearSlots();
+  const order = CARDS.map(c => c); for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+  spread = order.slice(0, 3).map(card => ({ card, reversed: Math.random() < 0.3 }));
+  spread.forEach((it, k) => deal(k, it.card, it.reversed, k * 420)); renderSpread();
+};
+
+// ---------- Save the selected card ----------
+async function saveBlob(blob, filename) {
+  const dl = window.claude?.use ? await window.claude.use("downloads").catch(() => null) : null;
+  if (dl) { try { await dl.save({ filename, data: blob }); } catch (e) { if (e?.code !== "declined" && e?.code !== "not_granted") await dl.save({ filename, data: new Uint8Array(await blob.arrayBuffer()) }).catch(() => {}); } return; }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = filename; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+$("save").onclick = async () => {
+  if (!current) return;
+  const img = new Image(); img.src = await styled(current.card, document.body.dataset.style); await img.decode();
+  const cv = document.createElement("canvas"); cv.width = img.naturalWidth; cv.height = img.naturalHeight; const x = cv.getContext("2d");
+  if (document.body.dataset.style === "bw") x.filter = "grayscale(1) contrast(1.18) brightness(1.04)";
+  if (current.reversed) { x.translate(cv.width, cv.height); x.rotate(Math.PI); }
+  x.drawImage(img, 0, 0);
+  try { cv.toBlob(b => saveBlob(b, `${current.card.name.toLowerCase().replace(/\s+/g, "-")}.png`)); }
+  catch { $("save").textContent = "Can't save from a local file"; }
+};
+</script>
+</body>
+</html>

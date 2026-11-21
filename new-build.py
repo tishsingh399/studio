@@ -14,6 +14,7 @@ SECTIONS = ("What it is", "The one thing I learned", "How to run")
 README = """# {title}
 
 {date} · capture: `capture.jpg` (a still) or `capture.mp4` (10 to 15 seconds)
+Write-up: none yet (add the Medium link here when there is one)
 
 ## What it is
 TODO

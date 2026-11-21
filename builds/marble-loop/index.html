@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marble Loop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+/* clementine:start */
+/* Generated from Clementine tokens (clementine-ds) by Idea Lab/scripts/clementine-css.py. Do not edit by hand. */
+:root {
+  --cl-spacing-xs: 4px;
+  --cl-spacing-sm: 8px;
+  --cl-spacing-md: 16px;
+  --cl-spacing-lg: 24px;
+  --cl-spacing-xl: 32px;
+  --cl-radius-xs: 2px;
+  --cl-radius-sm: 4px;
+  --cl-radius-md: 6px;
+  --cl-radius-lg: 8px;
+  --cl-radius-xl: 99px;
+  --cl-shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+  --cl-shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --cl-shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+  --cl-shadow-lg: 0 8px 24px rgba(0,0,0,0.16);
+  --cl-shadow-xl: 0 16px 48px rgba(0,0,0,0.2);
+  --cl-typography-font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --cl-typography-font-family-mono: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', monospace;
+  --cl-typography-font-size-xs: 12px;
+  --cl-typography-font-size-sm: 14px;
+  --cl-typography-font-size-md: 16px;
+  --cl-typography-font-size-lg: 18px;
+  --cl-typography-font-size-xl: 20px;
+  --cl-typography-line-height-xs: 1.4;
+  --cl-typography-line-height-sm: 1.45;
+  --cl-typography-line-height-md: 1.55;
+  --cl-typography-line-height-lg: 1.6;
+  --cl-typography-line-height-xl: 1.65;
+  --cl-motion-duration-instant: 0ms;
+  --cl-motion-duration-fast: 100ms;
+  --cl-motion-duration-normal: 200ms;
+  --cl-motion-duration-slow: 300ms;
+  --cl-motion-duration-stream: 1200ms;
+  --cl-motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --cl-motion-easing-decelerate: cubic-bezier(0, 0, 0, 1);
+  --cl-motion-easing-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --cl-color-brand-clementine: #ff8040;
+  --cl-color-brand-clementine-strong: #f5631a;
+  --cl-action-primary: #2563eb;
+  --cl-action-primary-hover: #1d4ed8;
+  --cl-action-primary-active: #1e40af;
+  --cl-action-selected-subtle: #eff4ff;
+  --cl-action-selected-subtle-hover: #dbeafe;
+  --cl-action-destructive: #dc2626;
+  --cl-action-destructive-hover: #b91c1c;
+  --cl-accent-brand: #f97316;
+  --cl-surface-default: #fafaf8;
+  --cl-surface-elevated: #ffffff;
+  --cl-surface-subtle: #f3f3f0;
+  --cl-surface-subtle-hover: #e5e5e0;
+  --cl-surface-inverse: #1a1a18;
+  --cl-surface-overlay: rgba(0,0,0,0.4);
+  --cl-text-primary: #1a1a18;
+  --cl-text-secondary: #6b6b66;
+  --cl-text-tertiary: #737370;
+  --cl-text-on-action: #ffffff;
+  --cl-text-link: #2563eb;
+  --cl-text-on-inverse: #a3a39e;
+  --cl-text-on-inverse-muted: #e5e5e0;
+  --cl-text-on-inverse-strong: #ffffff;
+  --cl-border-default: #e5e5e0;
+  --cl-border-strong: #737370;
+  --cl-border-focus: #2563eb;
+  --cl-border-inverse: #3a3a37;
+  --cl-focus-ring: #f5631a;
+  --cl-feedback-error: #dc2626;
+  --cl-feedback-error-subtle: #fef2f2;
+  --cl-feedback-success: #16a34a;
+  --cl-feedback-success-subtle: #f0fdf4;
+  --cl-feedback-warning: #ea580c;
+  --cl-feedback-warning-subtle: #fff7ed;
+  --cl-risk-critical: #7f1d1d;
+  --cl-risk-critical-subtle: #fef2f2;
+  --cl-risk-high: #c2410c;
+  --cl-risk-high-subtle: #fff7ed;
+  --cl-risk-medium: #ea580c;
+  --cl-risk-medium-subtle: #ffedd5;
+  --cl-risk-low: #16a34a;
+  --cl-risk-low-subtle: #f0fdf4;
+  /* Fixed theme values: --cl-dark-* and --cl-light-* never switch, for pages that commit to one look on purpose. */
+  --cl-dark-action-primary: #60a5fa;
+  --cl-dark-action-primary-hover: #93c5fd;
+  --cl-dark-action-primary-active: #3b82f6;
+  --cl-dark-action-selected-subtle: #1e3a8a;
+  --cl-dark-action-selected-subtle-hover: #1e40af;
+  --cl-dark-action-destructive: #f87171;
+  --cl-dark-action-destructive-hover: #fca5a5;
+  --cl-dark-accent-brand: #ff8040;
+  --cl-dark-surface-default: #1a2735;
+  --cl-dark-surface-elevated: #243447;
+  --cl-dark-surface-subtle: #15202e;
+  --cl-dark-surface-subtle-hover: #243447;
+  --cl-dark-surface-inverse: #1a1a18;
+  --cl-dark-surface-overlay: rgba(0,0,0,0.6);
+  --cl-dark-text-primary: #f0f4f8;
+  --cl-dark-text-secondary: #a0aec0;
+  --cl-dark-text-tertiary: #94a1b2;
+  --cl-dark-text-on-action: #1a1a18;
+  --cl-dark-text-link: #60a5fa;
+  --cl-dark-text-on-inverse: #a3a39e;
+  --cl-dark-text-on-inverse-muted: #e5e5e0;
+  --cl-dark-text-on-inverse-strong: #ffffff;
+  --cl-dark-border-default: #4a5568;
+  --cl-dark-border-strong: #718096;
+  --cl-dark-border-focus: #60a5fa;
+  --cl-dark-border-inverse: #3a3a37;
+  --cl-dark-focus-ring: #ff8040;
+  --cl-dark-feedback-error: #f87171;
+  --cl-dark-feedback-error-subtle: #3b1515;
+  --cl-dark-feedback-success: #4ade80;
+  --cl-dark-feedback-success-subtle: #15302b;
+  --cl-dark-feedback-warning: #fb923c;
+  --cl-dark-feedback-warning-subtle: #302015;
+  --cl-dark-risk-critical: #f87171;
+  --cl-dark-risk-critical-subtle: #3b1515;
+  --cl-dark-risk-high: #fb923c;
+  --cl-dark-risk-high-subtle: #302015;
+  --cl-dark-risk-medium: #fdba74;
+  --cl-dark-risk-medium-subtle: #2a1d10;
+  --cl-dark-risk-low: #4ade80;
+  --cl-dark-risk-low-subtle: #15302b;
+  --cl-light-action-primary: #2563eb;
+  --cl-light-action-primary-hover: #1d4ed8;
+  --cl-light-action-primary-active: #1e40af;
+  --cl-light-action-selected-subtle: #eff4ff;
+  --cl-light-action-selected-subtle-hover: #dbeafe;
+  --cl-light-action-destructive: #dc2626;
+  --cl-light-action-destructive-hover: #b91c1c;
+  --cl-light-accent-brand: #f97316;
+  --cl-light-surface-default: #fafaf8;
+  --cl-light-surface-elevated: #ffffff;
+  --cl-light-surface-subtle: #f3f3f0;
+  --cl-light-surface-subtle-hover: #e5e5e0;
+  --cl-light-surface-inverse: #1a1a18;
+  --cl-light-surface-overlay: rgba(0,0,0,0.4);
+  --cl-light-text-primary: #1a1a18;
+  --cl-light-text-secondary: #6b6b66;
+  --cl-light-text-tertiary: #737370;
+  --cl-light-text-on-action: #ffffff;
+  --cl-light-text-link: #2563eb;
+  --cl-light-text-on-inverse: #a3a39e;
+  --cl-light-text-on-inverse-muted: #e5e5e0;
+  --cl-light-text-on-inverse-strong: #ffffff;
+  --cl-light-border-default: #e5e5e0;
+  --cl-light-border-strong: #737370;
+  --cl-light-border-focus: #2563eb;
+  --cl-light-border-inverse: #3a3a37;
+  --cl-light-focus-ring: #f5631a;
+  --cl-light-feedback-error: #dc2626;
+  --cl-light-feedback-error-subtle: #fef2f2;
+  --cl-light-feedback-success: #16a34a;
+  --cl-light-feedback-success-subtle: #f0fdf4;
+  --cl-light-feedback-warning: #ea580c;
+  --cl-light-feedback-warning-subtle: #fff7ed;
+  --cl-light-risk-critical: #7f1d1d;
+  --cl-light-risk-critical-subtle: #fef2f2;
+  --cl-light-risk-high: #c2410c;
+  --cl-light-risk-high-subtle: #fff7ed;
+  --cl-light-risk-medium: #ea580c;
+  --cl-light-risk-medium-subtle: #ffedd5;
+  --cl-light-risk-low: #16a34a;
+  --cl-light-risk-low-subtle: #f0fdf4;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --cl-action-primary: #60a5fa;
+  --cl-action-primary-hover: #93c5fd;
+  --cl-action-primary-active: #3b82f6;
+  --cl-action-selected-subtle: #1e3a8a;
+  --cl-action-selected-subtle-hover: #1e40af;
+  --cl-action-destructive: #f87171;
+  --cl-action-destructive-hover: #fca5a5;
+  --cl-accent-brand: #ff8040;
+  --cl-surface-default: #1a2735;
+  --cl-surface-elevated: #243447;
+  --cl-surface-subtle: #15202e;
+  --cl-surface-subtle-hover: #243447;
+  --cl-surface-inverse: #1a1a18;
+  --cl-surface-overlay: rgba(0,0,0,0.6);
+  --cl-text-primary: #f0f4f8;
+  --cl-text-secondary: #a0aec0;
+  --cl-text-tertiary: #94a1b2;
+  --cl-text-on-action: #1a1a18;
+  --cl-text-link: #60a5fa;
+  --cl-text-on-inverse: #a3a39e;
+  --cl-text-on-inverse-muted: #e5e5e0;
+  --cl-text-on-inverse-strong: #ffffff;
+  --cl-border-default: #4a5568;
+  --cl-border-strong: #718096;
+  --cl-border-focus: #60a5fa;
+  --cl-border-inverse: #3a3a37;
+  --cl-focus-ring: #ff8040;
+  --cl-feedback-error: #f87171;
+  --cl-feedback-error-subtle: #3b1515;
+  --cl-feedback-success: #4ade80;
+  --cl-feedback-success-subtle: #15302b;
+  --cl-feedback-warning: #fb923c;
+  --cl-feedback-warning-subtle: #302015;
+  --cl-risk-critical: #f87171;
+  --cl-risk-critical-subtle: #3b1515;
+  --cl-risk-high: #fb923c;
+  --cl-risk-high-subtle: #302015;
+  --cl-risk-medium: #fdba74;
+  --cl-risk-medium-subtle: #2a1d10;
+  --cl-risk-low: #4ade80;
+  --cl-risk-low-subtle: #15302b;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --cl-action-primary: #60a5fa;
+  --cl-action-primary-hover: #93c5fd;
+  --cl-action-primary-active: #3b82f6;
+  --cl-action-selected-subtle: #1e3a8a;
+  --cl-action-selected-subtle-hover: #1e40af;
+  --cl-action-destructive: #f87171;
+  --cl-action-destructive-hover: #fca5a5;
+  --cl-accent-brand: #ff8040;
+  --cl-surface-default: #1a2735;
+  --cl-surface-elevated: #243447;
+  --cl-surface-subtle: #15202e;
+  --cl-surface-subtle-hover: #243447;
+  --cl-surface-inverse: #1a1a18;
+  --cl-surface-overlay: rgba(0,0,0,0.6);
+  --cl-text-primary: #f0f4f8;
+  --cl-text-secondary: #a0aec0;
+  --cl-text-tertiary: #94a1b2;
+  --cl-text-on-action: #1a1a18;
+  --cl-text-link: #60a5fa;
+  --cl-text-on-inverse: #a3a39e;
+  --cl-text-on-inverse-muted: #e5e5e0;
+  --cl-text-on-inverse-strong: #ffffff;
+  --cl-border-default: #4a5568;
+  --cl-border-strong: #718096;
+  --cl-border-focus: #60a5fa;
+  --cl-border-inverse: #3a3a37;
+  --cl-focus-ring: #ff8040;
+  --cl-feedback-error: #f87171;
+  --cl-feedback-error-subtle: #3b1515;
+  --cl-feedback-success: #4ade80;
+  --cl-feedback-success-subtle: #15302b;
+  --cl-feedback-warning: #fb923c;
+  --cl-feedback-warning-subtle: #302015;
+  --cl-risk-critical: #f87171;
+  --cl-risk-critical-subtle: #3b1515;
+  --cl-risk-high: #fb923c;
+  --cl-risk-high-subtle: #302015;
+  --cl-risk-medium: #fdba74;
+  --cl-risk-medium-subtle: #2a1d10;
+  --cl-risk-low: #4ade80;
+  --cl-risk-low-subtle: #15302b;
+  color-scheme: dark;
+}
+/* clementine:end */
+/* Layout: a full-width dark 3D stage (Clementine's dark navy) with a slim control bar underneath. All colours are Clementine tokens. */
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--cl-surface-default);color:var(--cl-text-primary);font-family:var(--cl-typography-font-family-sans);font-size:var(--cl-typography-font-size-sm);line-height:var(--cl-typography-line-height-md)}
+.wrap{max-width:1100px;margin:0 auto;padding:var(--cl-spacing-xl) max(var(--cl-spacing-md),env(safe-area-inset-left)) var(--cl-spacing-xl);display:flex;flex-direction:column;gap:var(--cl-spacing-md)}
+/* Gap: no display size in Clementine yet (see clementine-gaps.md). */
+h1{font-weight:700;font-size:calc(var(--cl-typography-font-size-xl) * 2);line-height:1.1;margin:0;letter-spacing:-.02em}
+.sub{margin:var(--cl-spacing-xs) 0 0;color:var(--cl-text-secondary);font-size:var(--cl-typography-font-size-md);max-width:60ch}
+.stage{position:relative;background:var(--cl-dark-surface-default);border-radius:var(--cl-radius-lg);overflow:hidden;box-shadow:var(--cl-shadow-md);aspect-ratio:4/5;max-height:80vh;width:100%}
+.stage canvas{display:block;width:100%!important;height:100%!important}
+.msg{position:absolute;inset:0;display:grid;place-items:center;color:var(--cl-dark-text-secondary);padding:var(--cl-spacing-lg);text-align:center}
+.bar{display:flex;flex-wrap:wrap;gap:var(--cl-spacing-md);align-items:center}
+.ctl{display:flex;align-items:center;gap:var(--cl-spacing-sm)}
+.ctl span{font-family:var(--cl-typography-font-family-mono);font-size:var(--cl-typography-font-size-xs);color:var(--cl-text-secondary);text-transform:uppercase;letter-spacing:.06em}
+input[type=range]{width:120px;accent-color:var(--cl-action-primary)}
+select{font:inherit;background:var(--cl-surface-elevated);color:var(--cl-text-primary);border:1px solid var(--cl-border-default);border-radius:var(--cl-radius-md);padding:var(--cl-spacing-xs) var(--cl-spacing-sm)}
+button{font:inherit;border:1px solid var(--cl-border-default);background:var(--cl-surface-elevated);color:var(--cl-text-primary);border-radius:var(--cl-radius-md);padding:6px 12px;cursor:pointer}
+button:hover{background:var(--cl-surface-subtle-hover)}
+button.primary{background:var(--cl-action-primary);border-color:var(--cl-action-primary);color:var(--cl-text-on-action)}
+button.primary:hover{background:var(--cl-action-primary-hover)}
+.rec{color:var(--cl-feedback-error);font-family:var(--cl-typography-font-family-mono);font-size:var(--cl-typography-font-size-xs)}
+:focus-visible{outline:2px solid var(--cl-focus-ring);outline-offset:2px}
+.spacer{flex:1}
+@media (min-width:900px){.stage{aspect-ratio:16/11}}
+</style>
+<script type="importmap">
+{"imports":{
+  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+  "cannon-es":"https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"
+}}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Marble Loop</h1>
+    <p class="sub">Real physics: glass marbles roll and bounce down two staircases and a slide, each landing a note, then ride the lift back to the top. Forever.</p>
+  </header>
+
+  <div class="stage" id="stage" role="img" aria-label="A 3D marble run: stepped blocks shaded from clementine orange to blue on a navy grid floor, glass marbles rolling down steps and riding a glass lift back up">
+    <div class="msg" id="msg">Loading the scene…</div>
+  </div>
+
+  <div class="bar">
+    <button class="primary" id="sound" type="button" aria-pressed="false">Turn sound on</button>
+    <label class="ctl"><span>Marbles</span><input id="count" type="range" min="1" max="12" value="8"></label>
+    <label class="ctl"><span>Scale</span><select id="scale"><option>Major pentatonic</option><option>Minor pentatonic</option><option>Lydian</option><option>Dorian</option></select></label>
+    <label class="ctl"><span>Volume</span><input id="vol" type="range" min="0" max="100" value="60"></label>
+    <span class="spacer"></span>
+    <button id="pause" type="button">Pause</button>
+    <button id="record" type="button">Record 15s clip</button>
+    <span class="rec" id="recState" hidden>Recording…</span>
+  </div>
+</div>
+
+<script type="module">
+import * as THREE from "three";
+import * as CANNON from "cannon-es";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { Reflector } from "three/addons/objects/Reflector.js";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+
+const $ = id => document.getElementById(id);
+const tok = n => getComputedStyle(document.documentElement).getPropertyValue("--cl-" + n).trim();
+const col = n => new THREE.Color(tok(n));
+const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+
+// Save a file: through the artifact's downloads permission when published, a plain link when opened locally.
+async function saveBlob(blob, filename) {
+  const dl = window.claude?.use ? await window.claude.use("downloads").catch(() => null) : null;
+  if (dl) {
+    try { await dl.save({ filename, data: blob }); }
+    catch (e) { if (e?.code !== "declined" && e?.code !== "not_granted") await dl.save({ filename, data: new Uint8Array(await blob.arrayBuffer()) }).catch(() => {}); }
+    return;
+  }
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = filename; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+// ---------- Clementine palette ----------
+const P = {
+  floor: col("dark-surface-default"), grid: col("dark-border-default"),
+  top: col("surface-subtle"), sideLow: col("dark-action-primary"), sideHigh: col("color-brand-clementine"), tile: col("accent-brand"),
+  marbles: ["color-brand-clementine","dark-action-primary","dark-feedback-success","surface-default","accent-brand","dark-feedback-warning"].map(col)
+};
+// Gap: Clementine has no categorical palette, so marble colours borrow brand, action and feedback tokens (logged in clementine-gaps.md).
+
+// ---------- Renderer, scene, camera, light ----------
+const stage = $("stage");
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ antialias: true }); }
+catch (e) { $("msg").textContent = "This browser can't show 3D (WebGL is off). Try Chrome or Safari."; throw e; }
+renderer.setPixelRatio(Math.min(2, devicePixelRatio || 1));
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 0.8;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+stage.appendChild(renderer.domElement); $("msg").hidden = true;
+
+const scene = new THREE.Scene(); scene.background = P.floor.clone(); scene.fog = new THREE.Fog(P.floor, 30, 60);
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(renderer), 0.04).texture;
+const camera = new THREE.OrthographicCamera(-10, 10, 10, -10, 0.1, 200);
+camera.position.set(16, 15, 16); camera.lookAt(-0.3, 2.6, 0);
+
+const key = new THREE.DirectionalLight(0xffffff, 1.5);
+key.position.set(-8, 18, 10); key.castShadow = true; key.shadow.mapSize.set(2048, 2048);
+Object.assign(key.shadow.camera, { left: -12, right: 12, top: 12, bottom: -12, near: 1, far: 50 });
+key.shadow.bias = -0.0004; key.shadow.radius = 4; scene.add(key);
+scene.add(new THREE.HemisphereLight(P.sideHigh, P.floor, 0.25));
+
+const mirror = new Reflector(new THREE.PlaneGeometry(80, 80), { textureWidth: 1024, textureHeight: 1024, color: 0x4a5568 });
+mirror.rotation.x = -Math.PI / 2; mirror.position.y = -0.01; scene.add(mirror);
+const floorMesh = new THREE.Mesh(new THREE.PlaneGeometry(80, 80), new THREE.MeshStandardMaterial({ color: P.floor, roughness: 0.7, transparent: true, opacity: 0.9, envMapIntensity: 0.2 }));
+floorMesh.rotation.x = -Math.PI / 2; scene.add(floorMesh);
+const grid = new THREE.GridHelper(80, 80, P.grid, P.grid); grid.position.y = 0.005; grid.material.transparent = true; grid.material.opacity = 0.35; scene.add(grid);
+const catcher = new THREE.Mesh(new THREE.PlaneGeometry(80, 80), new THREE.ShadowMaterial({ opacity: 0.35 }));
+catcher.rotation.x = -Math.PI / 2; catcher.position.y = 0.01; catcher.receiveShadow = true; scene.add(catcher);
+
+// ---------- Physics world ----------
+const world = new CANNON.World({ gravity: new CANNON.Vec3(0, -14, 0) });
+world.allowSleep = false; // default broadphase: fine for ~60 static bodies and avoids missed wall contacts
+const trackMat = new CANNON.Material("track"), marbleMat = new CANNON.Material("marble");
+world.addContactMaterial(new CANNON.ContactMaterial(trackMat, marbleMat, { friction: 0.04, restitution: 0.22 }));
+world.addContactMaterial(new CANNON.ContactMaterial(marbleMat, marbleMat, { friction: 0.02, restitution: 0.5 }));
+const ground = new CANNON.Body({ mass: 0, material: trackMat, shape: new CANNON.Plane() });
+ground.quaternion.setFromEuler(-Math.PI / 2, 0, 0); world.addBody(ground);
+
+// ---------- Track pieces: one helper builds the visible block, its tilted physics top, and glass side rails ----------
+const MAXH = 7.2, TILT = 4 * Math.PI / 180, R = 0.3;
+const blockMat = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.6, envMapIntensity: 0.35, side: THREE.DoubleSide });
+const railMat = new THREE.MeshPhysicalMaterial({ color: 0xffffff, roughness: 0.05, transmission: 0.9, transparent: true, opacity: 0.22 });
+const sideColor = y => P.sideLow.clone().lerp(P.sideHigh, Math.min(1, y / MAXH) ** 0.6);
+function solidMesh(x0, x1, z0, z1, h) { // h(x,z) gives the top height
+  const c = [[x0, z0], [x1, z0], [x1, z1], [x0, z1]], pos = [], cl = [];
+  const tri = (a, b, d, top) => { for (const v of [a, b, d]) { pos.push(...v); const k = top ? P.top : sideColor(v[1]); cl.push(k.r, k.g, k.b); } };
+  const T = c.map(([x, z]) => [x, h(x, z), z]), B = c.map(([x, z]) => [x, 0, z]);
+  tri(T[0], T[2], T[1], true); tri(T[0], T[3], T[2], true);
+  for (let i = 0; i < 4; i++) { const j = (i + 1) % 4; tri(B[i], B[j], T[j]); tri(B[i], T[j], T[i]); }
+  const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3)); g.setAttribute("color", new THREE.Float32BufferAttribute(cl, 3)); g.computeVertexNormals();
+  const m = new THREE.Mesh(g, blockMat); m.castShadow = m.receiveShadow = true; scene.add(m);
+}
+function wall(cx, cy, cz, hx, hy, hz, visible = true) {
+  // Physics walls are 0.15 thick so fast marbles can't tunnel through; the glass you see stays thin.
+  const b = new CANNON.Body({ mass: 0, material: trackMat, shape: new CANNON.Box(new CANNON.Vec3(Math.max(hx, 0.15), hy, Math.max(hz, 0.15))) });
+  b.position.set(cx, cy, cz); world.addBody(b);
+  if (visible) { const m = new THREE.Mesh(new THREE.BoxGeometry(hx * 2, hy * 2, hz * 2), railMat); m.position.set(cx, cy, cz); scene.add(m); }
+  return b;
+}
+const DIRS = { "+x": [1, 0], "-x": [-1, 0], "+z": [0, 1], "-z": [0, -1] };
+// A piece whose top falls by `drop` along `dir` (top = height at its middle). walls: which sides get rails ("n" −z, "s" +z, "w" −x, "e" +x).
+function piece(x0, x1, z0, z1, top, dir, drop, walls = "", note) {
+  const [dx, dz] = DIRS[dir], cx = (x0 + x1) / 2, cz = (z0 + z1) / 2, len = dx ? x1 - x0 : z1 - z0;
+  const h = (x, z) => top - drop * (dx ? dx * (x - cx) : dz * (z - cz)) / len;
+  solidMesh(x0, x1, z0, z1, h);
+  const ang = Math.atan2(drop, len), body = new CANNON.Body({ mass: 0, material: trackMat });
+  body.addShape(new CANNON.Box(new CANNON.Vec3(dx ? len / 2 / Math.cos(ang) : (x1 - x0) / 2, 0.1, dz ? len / 2 / Math.cos(ang) : (z1 - z0) / 2)));
+  const q = new CANNON.Quaternion();
+  if (dx) q.setFromAxisAngle(new CANNON.Vec3(0, 0, 1), -dx * ang); else q.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), dz * ang);
+  body.quaternion.copy(q);
+  const n = q.vmult(new CANNON.Vec3(0, 1, 0)); body.position.set(cx - n.x * 0.1, top - n.y * 0.1, cz - n.z * 0.1);
+  if (note !== undefined) body.note = note;
+  world.addBody(body);
+  const H = top + drop / 2 + 0.25, T = 0.03;
+  if (walls.includes("n")) wall(cx, H, z0, (x1 - x0) / 2, 0.3, T);
+  if (walls.includes("s")) wall(cx, H, z1, (x1 - x0) / 2, 0.3, T);
+  if (walls.includes("w")) wall(x0, H, cz, T, 0.3, (z1 - z0) / 2);
+  if (walls.includes("e")) wall(x1, H, cz, T, 0.3, (z1 - z0) / 2);
+  return body;
+}
+// Note tiles that glow when struck.
+const tiles = [];
+function tile(x, y, z) {
+  const m = new THREE.Mesh(new THREE.BoxGeometry(0.42, 0.03, 0.42), new THREE.MeshStandardMaterial({ color: P.tile, emissive: P.tile, emissiveIntensity: 0, roughness: 0.4, transparent: true, opacity: 0.55 }));
+  m.position.set(x, y + 0.02, z); scene.add(m); tiles.push(m); return tiles.length - 1;
+}
+
+// ---------- Layout ----------
+const ZA = -3, ZB = 3, XL = -5.2, W = 0.6, d = Math.tan(TILT); // d: drop per unit length on level pieces
+piece(-4.6, -3.5, ZA - W, ZA + W, MAXH, "+x", 1.1 * d, "nsw");                                   // start platform
+const stepsA = [6.6, 6.0, 5.4, 4.8, 4.2, 3.6];
+stepsA.forEach((h, i) => piece(-3.5 + i, -2.5 + i, ZA - W, ZA + W, h, "+x", d, "ns", tile(-3 + i, h, ZA)));
+piece(2.5, 4.4, ZA - W, ZA + W, 3.05, "+x", 2 * d, "ns", tile(3.0, 3.05, ZA));                // landing A: rolls on toward the corner…
+piece(4.4, 5.6, ZA - W, ZA + W, 2.85, "+z", 0.22, "ne");                                         // …where a steeper tilt tips it into the slide
+piece(4.4, 5.6, ZA + W, ZB - W, 2.1, "+z", 1.2, "we");                                           // the slide
+piece(4.4, 5.6, ZB - W, ZB + W, 1.3, "-x", 0.3, "se", tile(5.0, 1.3, ZB)); // low end 1.15 sits above staircase B's first step (1.135)                 // landing B: rolls toward staircase B
+const stepsB = [1.1, 0.98, 0.86, 0.74, 0.62];
+stepsB.forEach((h, i) => piece(3.4 - i, 4.4 - i, ZB - W, ZB + W, h, "-x", d, "ns", tile(3.9 - i, h, ZB)));
+piece(-4.6, -0.6, ZB - W, ZB + W, 0.5, "-x", 0.16, "ns");                                    // floor run
+const runTiles = [-1.8, -3.0, -4.2].map(x => ({ x, note: tile(x, 0.5 + 0.16 * (x + 2.6) / 4, ZB) }));
+piece(-5.8, -4.6, ZB - W, ZB + W, 0.3, "-z", 0.2, "sw");                                    // corner
+piece(-5.8, -4.6, ZA - W, ZB - W, 0.12, "-z", 0.1, "we");                        // back to the lift
+wall(XL, 0.5, ZA - W, W, 0.3, 0.03);                                                             // stop at the lift base
+const NOTES = tiles.length; // 16
+
+// Glass lift tube (visual)
+const tube = new THREE.Mesh(new THREE.CylinderGeometry(0.45, 0.45, MAXH + 0.8, 32, 1, true),
+  new THREE.MeshPhysicalMaterial({ color: 0xffffff, roughness: 0.05, transmission: 0.95, thickness: 0.2, transparent: true, opacity: 0.3, side: THREE.DoubleSide }));
+tube.position.set(XL, (MAXH + 0.8) / 2, ZA - 0.1); scene.add(tube);
+
+// ---------- Marbles ----------
+const marbleGeo = new THREE.SphereGeometry(R, 48, 32);
+const RELEASE = new CANNON.Vec3(-4.35, MAXH + R + 0.15, ZA), LIFT_BASE = new THREE.Vector3(XL, 0.6, ZA - 0.1), LIFT_TOP = new THREE.Vector3(XL, MAXH + 0.8, ZA - 0.1);
+let marbles = [], clock = 0, lastRelease = -10;
+function makeMarble(i) {
+  const c = P.marbles[i % P.marbles.length];
+  const mesh = new THREE.Mesh(marbleGeo, new THREE.MeshPhysicalMaterial({ color: c, roughness: 0.08, clearcoat: 1, clearcoatRoughness: 0.05, transmission: 0.35, thickness: 0.6, ior: 1.5, sheen: 0.4, sheenColor: c }));
+  mesh.castShadow = true; scene.add(mesh);
+  const body = new CANNON.Body({ mass: 1, material: marbleMat, shape: new CANNON.Sphere(R), linearDamping: 0.04, angularDamping: 0.08 });
+  const m = { mesh, body, mode: "lift", liftT: 0, liftFrom: LIFT_BASE.clone(), still: 0, lastHit: new Map(), runTile: -1 };
+  body.addEventListener("collide", e => {
+    const note = e.body.note; if (note === undefined || m.mode !== "run") return;
+    const v = Math.abs(e.contact.getImpactVelocityAlongNormal()); if (v < 0.9) return;
+    if (clock - (m.lastHit.get(note) ?? -9) < 0.3) return;
+    m.lastHit.set(note, clock); hit(note, v);
+  });
+  return m;
+}
+function toLift(m) { m.mode = "lift"; m.liftT = 0; m.liftFrom.copy(m.body.position); if (m.body.world) world.removeBody(m.body); }
+function release(m) {
+  m.mode = "run"; m.still = 0; m.runTile = -1;
+  m.body.position.copy(RELEASE); m.body.velocity.set(1.6, 0, 0); m.body.angularVelocity.set(0, 0, 0);
+  world.addBody(m.body); lastRelease = clock;
+}
+function setCount(n) {
+  while (marbles.length < n) { const m = makeMarble(marbles.length); m.liftT = -marbles.length * 0.9; marbles.push(m); }
+  while (marbles.length > n) { const m = marbles.pop(); scene.remove(m.mesh); if (m.body.world) world.removeBody(m.body); }
+}
+setCount(8);
+// Lift path: arrival point → lift base → top of the tube → just above the release point. Waits at the top so releases stay spaced.
+function liftPos(m, out) {
+  const legs = [m.liftFrom, LIFT_BASE, LIFT_TOP, new THREE.Vector3(RELEASE.x, RELEASE.y + 0.3, RELEASE.z)];
+  let t = Math.max(0, m.liftT);
+  for (let i = 0; i < legs.length - 1; i++) { const L = legs[i].distanceTo(legs[i + 1]); if (t <= L) { out.copy(legs[i]).lerp(legs[i + 1], L ? t / L : 1); return false; } t -= L; }
+  out.copy(legs[legs.length - 1]); return true;
+}
+
+// ---------- Sound (only after the button) ----------
+let ac = null, master = null, echo = null, recDest = null, soundOn = false;
+const SCALES = { "Major pentatonic": [0, 2, 4, 7, 9], "Minor pentatonic": [0, 3, 5, 7, 10], "Lydian": [0, 2, 4, 6, 7, 9, 11], "Dorian": [0, 2, 3, 5, 7, 9, 10] };
+function freq(note) { const sc = SCALES[$("scale").value], step = NOTES - 1 - note; return 220 * 2 ** ((sc[step % sc.length] + 12 * Math.floor(step / sc.length)) / 12); }
+function initAudio() {
+  ac = new (window.AudioContext || window.webkitAudioContext)();
+  master = ac.createGain(); master.gain.value = +$("vol").value / 100 * 0.5;
+  const dl = ac.createDelay(1); dl.delayTime.value = 0.32; const fb = ac.createGain(); fb.gain.value = 0.3; const wet = ac.createGain(); wet.gain.value = 0.25;
+  dl.connect(fb); fb.connect(dl); dl.connect(wet); wet.connect(master); echo = dl;
+  master.connect(ac.destination); recDest = ac.createMediaStreamDestination(); master.connect(recDest);
+}
+function hit(note, v) {
+  tiles[note].material.emissiveIntensity = 2.2;
+  if (!soundOn || !ac) return;
+  const t = ac.currentTime, f = freq(note), o = ac.createOscillator(), o2 = ac.createOscillator(), g = ac.createGain(), g2 = ac.createGain();
+  o.type = "sine"; o.frequency.value = f; o2.type = "sine"; o2.frequency.value = f * 3.01; g2.gain.value = 0.12;
+  const amp = Math.min(0.28, 0.08 + v * 0.03);
+  g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(amp, t + 0.004); g.gain.exponentialRampToValueAtTime(0.0001, t + 1.4);
+  o2.connect(g2); g2.connect(g); o.connect(g); g.connect(master); g.connect(echo);
+  o.start(t); o2.start(t); o.stop(t + 1.5); o2.stop(t + 1.5);
+}
+
+// ---------- Post ----------
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(512, 512), 0.18, 0.5, 0.92); composer.addPass(bloom);
+composer.addPass(new OutputPass());
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight, aspect = w / h, size = aspect > 1 ? 7.6 : 9.6;
+  Object.assign(camera, { left: -size * aspect, right: size * aspect, top: size, bottom: -size }); camera.updateProjectionMatrix();
+  renderer.setSize(w, h, false); composer.setSize(w, h);
+}
+new ResizeObserver(resize).observe(stage); resize();
+
+// ---------- Loop ----------
+const STEP = 1 / 120, LIFT_SPEED = 3.2, tmp = new THREE.Vector3();
+let paused = false, last = performance.now(), acc = 0;
+function physicsStep(dt) {
+  clock += dt; world.step(dt);
+  for (const m of marbles) {
+    if (m.mode === "lift") {
+      m.liftT += LIFT_SPEED * dt;
+      if (liftPos(m, tmp)) { m.liftT -= LIFT_SPEED * dt; if (clock - lastRelease > 1.3) release(m); }
+      m.mesh.position.copy(tmp); continue;
+    }
+    const p = m.body.position, v = m.body.velocity.length();
+    if (Math.abs(p.z - ZB) < W && p.y < 1) for (const t of runTiles) if (Math.abs(p.x - t.x) < 0.25 && m.runTile !== t.note) { m.runTile = t.note; hit(t.note, 1.5); }
+    // Reached the lift, fell off, or got stuck → back to the lift, so the loop never breaks.
+    m.still = v < 0.15 ? m.still + dt : 0;
+    const onLowTrack = (p.z > ZB - W - 0.1 && p.z < ZB + W + 0.1 && p.x > -5.9 && p.x < -0.5) || (p.x > -5.9 && p.x < -4.5 && p.z > ZA - W - 0.1 && p.z < ZB + W + 0.1);
+    const onFloor = p.y < 0.36 && !onLowTrack;
+    if ((p.x < XL + 0.7 && p.z < ZA + 0.9 && p.y < 1.2) || onFloor || p.y < -1 || m.still > 1.5) toLift(m);
+    m.mesh.position.copy(p); m.mesh.quaternion.copy(m.body.quaternion);
+  }
+  for (const t of tiles) t.material.emissiveIntensity *= reduced.matches ? 0.97 : 0.985;
+}
+function tick(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  if (!paused) { acc += dt * (reduced.matches ? 0.5 : 1); while (acc >= STEP) { physicsStep(STEP); acc -= STEP; } }
+  bloom.enabled = !reduced.matches;
+  composer.render(); requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+// ---------- Controls ----------
+$("sound").onclick = async () => {
+  if (!ac) initAudio(); if (ac.state === "suspended") await ac.resume();
+  soundOn = !soundOn; $("sound").textContent = soundOn ? "Turn sound off" : "Turn sound on"; $("sound").setAttribute("aria-pressed", soundOn);
+};
+$("vol").oninput = e => { if (master) master.gain.value = e.target.value / 100 * 0.5; };
+$("count").oninput = e => setCount(+e.target.value);
+$("pause").onclick = () => { paused = !paused; $("pause").textContent = paused ? "Play" : "Pause"; };
+$("record").onclick = () => {
+  if (!window.MediaRecorder) { $("record").textContent = "Recording not supported"; return; }
+  const stream = renderer.domElement.captureStream(60);
+  if (recDest && soundOn) recDest.stream.getAudioTracks().forEach(t => stream.addTrack(t));
+  const chunks = [], type = MediaRecorder.isTypeSupported("video/webm;codecs=vp9") ? "video/webm;codecs=vp9" : "video/webm";
+  const rec = new MediaRecorder(stream, { mimeType: type, videoBitsPerSecond: 8e6 });
+  rec.ondataavailable = e => e.data.size && chunks.push(e.data);
+  rec.onstop = () => { saveBlob(new Blob(chunks, { type: "video/webm" }), "marble-loop.webm"); $("recState").hidden = true; $("record").disabled = false; };
+  rec.start(); $("recState").hidden = false; $("record").disabled = true; setTimeout(() => rec.stop(), 15000);
+};
+window.__marble = { get marbles() { return marbles; }, get clock() { return clock; }, tiles };
+</script>
+</body>
+</html>
