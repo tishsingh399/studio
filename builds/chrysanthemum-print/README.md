@@ -1,6 +1,7 @@
 # Chrysanthemum, lino print
 
 2026 · capture: `capture.jpg`: two prints on two papers · `capture-2.jpg`: the carved block (original photos)
+Fixed for posting: `fixed.jpg`: the print on watercolour paper, cropped · `fixed-2.jpg`: the block, cropped. Crops only, colours untouched; the original photo stays as `capture.jpg`.
 Write-up: none yet
 
 ![Two deep red lino prints of a chrysanthemum in a circle](capture.jpg)

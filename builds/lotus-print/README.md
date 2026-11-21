@@ -1,6 +1,7 @@
 # Lotus (कमल), lino print
 
 2026 · capture: `capture.jpg`: the print and the inked block side by side (original photo)
+Fixed for posting: `fixed.webp`: straightened and cropped to the print and block (your edit). Crops only, colours untouched; the original photo stays as `capture.jpg`.
 Write-up: none yet
 
 ![Purple lino print of a lotus in a shrine frame, next to its inked block](capture.jpg)

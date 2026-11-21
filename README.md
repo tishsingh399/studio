@@ -35,7 +35,7 @@ python3 new-build.py my-new-thing
 
 That creates `builds/my-new-thing/README.md`. Fill in the three sections, drop in a capture, then run the same command again to draft `post.md` from the README. It won't overwrite a `post.md` you've edited unless you add `--force`.
 
-Print photos go in exactly as taken: no crops, edits or filters. [prints.html](prints.html) shows them together as a gallery.
+Print photos go in exactly as taken as `capture.jpg`. Cleaned-up versions for posting (straightened, cropped, colours untouched) sit next to them as `fixed.*`. [prints.html](prints.html) shows them together as a gallery.
 
 Nothing posts automatically. [POSTING.md](POSTING.md) covers what auto-posting to Instagram would need and when it's worth it.
 
