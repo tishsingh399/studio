@@ -2,13 +2,13 @@
 
 Drafted by `new-build.py` from the README, then rewritten in my voice. Edit freely. Nothing here is posted automatically.
 
-## Lettering + lino account
+## @tish_letters (hand-drawn)
 
 The 1909 Rider-Waite-Smith deck, all 22 trump cards, in black and white.
 
 Pamela Colman Smith drew these more than a hundred years ago and they're public domain now. I built a little page to draw a card a day, and a switch that re-renders her linework as engraving, halftone or star dither. The engraving one looks the most like something I'd want to carve.
 
-## UX with intent
+## @ux_perince (UX)
 
 My first tarot cards were drawn in code. They looked like a demo.
 

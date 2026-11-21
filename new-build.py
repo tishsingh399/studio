@@ -29,7 +29,7 @@ POST = """# Post drafts: {title}
 
 Starting points pulled from the README. Rewrite in your own words, or ask Claude to redraft them with the tina-writing skill. Nothing here is posted automatically.
 
-## Lettering + lino account
+## @tish_letters (hand-drawn)
 
 {what}
 
@@ -37,7 +37,7 @@ Starting points pulled from the README. Rewrite in your own words, or ask Claude
 
 Notes and code are in my studio repo, link in bio.
 
-## UX with intent
+## @ux_perince (UX)
 
 {what}
 
@@ -50,6 +50,8 @@ How it works, and how to run it yourself, is in my studio repo. Link in bio.
 def sections(text):
     parts = re.split(r"^## +(.+?)\s*$", text, flags=re.M)
     found = {k: v.strip() for k, v in zip(parts[1::2], parts[2::2])}
+    if "How I made it" in found:  # prints and other hand-made pieces swap "How to run" for this
+        found["How to run"] = found["How I made it"]
     missing = [s for s in SECTIONS if found.get(s, "TODO") in ("", "TODO")]
     return found, missing
 
@@ -88,6 +90,8 @@ def test():
         r.write_text(r.read_text().replace("TODO", "Seams matter.", 3))
         assert "drafted" in run("demo", root=root)
         assert "seams matter." in (root / "demo" / "post.md").read_text()
+        r.write_text(r.read_text().replace("## How to run", "## How I made it"))
+        assert "drafted" in run("demo", force=True, root=root)
         try: run("demo", root=root); raise AssertionError("overwrote post.md")
         except SystemExit: pass
         assert "drafted" in run("demo", force=True, root=root)

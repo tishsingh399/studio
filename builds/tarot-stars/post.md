@@ -2,7 +2,7 @@
 
 Drafted by `new-build.py` from the README, then rewritten in my voice. Edit freely. Nothing here is posted automatically.
 
-## Lettering + lino account
+## @tish_letters (hand-drawn)
 
 Pin art, but the pins are tiny tarot stars.
 
@@ -10,7 +10,7 @@ Dark parts of the picture push forward as sparkles, the middle tones become five
 
 You can feed it your own photo. Nothing gets uploaded.
 
-## UX with intent
+## @ux_perince (UX)
 
 I made a thing that rebuilds any picture out of 3D stars.
 

@@ -3,7 +3,7 @@
 Drafted by `new-build.py` from the README, then rewritten in my voice. Edit freely. Nothing here is posted automatically.
 Capture: `capture.jpg` (4:5, ready for a feed post).
 
-## Lettering + lino account
+## @tish_letters (hand-drawn)
 
 Different medium this month. I built a room.
 
@@ -15,7 +15,7 @@ I blended the last 40 pixels on each side into each other. It's still not perfec
 
 Link in bio.
 
-## UX with intent
+## @ux_perince (UX)
 
 I put my portfolio in a room. You land at a desk, turn around, and the things in the room open each section: design systems, case studies, AI work, about.
 

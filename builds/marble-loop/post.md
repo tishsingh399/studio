@@ -2,7 +2,7 @@
 
 Drafted by `new-build.py` from the README, then rewritten in my voice. Edit freely. Nothing here is posted automatically.
 
-## Lettering + lino account
+## @tish_letters (hand-drawn)
 
 Something to watch while the ink dries.
 
@@ -10,7 +10,7 @@ Glass marbles, two staircases, a slide, a lift back to the top. Every landing pl
 
 Took me an embarrassing while to learn that every step has to sit a hair lower than the last one. Line them up perfectly and the marbles just stop, stuck on an edge you can't even see.
 
-## UX with intent
+## @ux_perince (UX)
 
 I built a marble run with real physics so I'd stop doomscrolling other people's.
 
