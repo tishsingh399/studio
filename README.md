@@ -9,7 +9,7 @@ Things I make, one folder each, with what I learned making them. Creative code, 
 | [The atelier, a 360° room](builds/atelier-360/) | A panorama's left and right edges must match, or the seam shows every time you turn | soon |
 | [Marble Loop](builds/marble-loop/) | Each piece has to start a little lower than the last, or marbles stall on invisible lips | soon |
 | [Tarot Stars](builds/tarot-stars/) | Head-on beats clever: the angled view hid the picture | soon |
-| [Major Arcana](builds/major-arcana/) | Code-drawn art hits a ceiling; real illustration needs real art | soon |
+| [Major Arcana](builds/major-arcana/) | Code-drawn art hits a ceiling; real illustration needs real art | in progress |
 
 ## Prints
 

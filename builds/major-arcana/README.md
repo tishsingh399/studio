@@ -1,7 +1,7 @@
 # Major Arcana
 
 2026-11 · capture: `capture.jpg` (a still)
-Write-up: none yet
+Write-up: in progress (Medium link goes here)
 
 ![Major Arcana: three card slots and all 22 Rider-Waite-Smith cards](capture.jpg)
 
