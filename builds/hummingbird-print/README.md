@@ -1,9 +1,9 @@
 # Hummingbirds, lino print
 
-2026 · capture: Black lino print of hummingbirds and flowers in a sketchbook
+2026 · capture: `capture.jpg` (original photo)
 Write-up: none yet
 
-![](capture.jpg)
+![Black lino print of hummingbirds and flowers in a sketchbook](capture.jpg)
 
 ## What it is
 Two hummingbirds among big five-petal flowers, printed in black straight into my sketchbook.

@@ -35,13 +35,7 @@ python3 new-build.py my-new-thing
 
 That creates `builds/my-new-thing/README.md`. Fill in the three sections, drop in a capture, then run the same command again to draft `post.md` from the README. It won't overwrite a `post.md` you've edited unless you add `--force`.
 
-Photos of prints go through `ig-ready.py` first. It crops to the piece, fixes flat phone light and puts it on the same paper mat at 1080 × 1350, so the feed looks like one body of work:
-
-```bash
-python3 ig-ready.py photo.jpg builds/my-print/capture.jpg 100 0 830 1290
-```
-
-The four numbers are the crop box in pixels (left, top, right, bottom). Leave them off to use the whole photo.
+Print photos go in exactly as taken: no crops, edits or filters. [prints.html](prints.html) shows them together as a gallery.
 
 Nothing posts automatically. [POSTING.md](POSTING.md) covers what auto-posting to Instagram would need and when it's worth it.
 
