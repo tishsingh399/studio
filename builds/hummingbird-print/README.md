@@ -2,6 +2,7 @@
 
 2026 · capture: `capture.jpg` (original photo)
 Fixed for posting: `fixed.jpg`: cropped to the page. Crops only, colours untouched; the original photo stays as `capture.jpg`.
+Mockup: `mockup-frame.jpg` (framed on a wall).
 Write-up: none yet
 
 ![Black lino print of hummingbirds and flowers in a sketchbook](capture.jpg)
